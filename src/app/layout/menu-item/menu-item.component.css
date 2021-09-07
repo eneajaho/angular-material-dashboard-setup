@@ -7,6 +7,11 @@
   padding: 0 16px;
 }
 
+.mat-expansion-panel-header-title,
+.mat-expansion-panel-header-description {
+  align-items: center;
+}
+
 .mat-list-icon {
   padding: 4px;
 }
@@ -15,6 +20,8 @@
   cursor: pointer;
   border-left: 4px solid transparent;
   transition: 0.2s all;
+
+  box-sizing: border-box;
 }
 
 .mat-list-item:hover {
@@ -26,7 +33,7 @@
 }
 
 .mat-list-base .mat-list-item {
-   height: 50px;
+  height: 50px;
 }
 
 .list-item {

@@ -37,18 +37,18 @@ export class LayoutComponent {
     },
     {
       title: 'Statistics',
-      icon: 'chart',
+      icon: 'bar_chart',
       color: '#ff7f0e',
       subMenu: [
         {
           title: 'Sales',
           icon: 'money',
-          link: '/money',
+          link: '/sales',
           color: '#ff7f0e'
         },
         {
           title: 'Customers',
-          icon: 'person',
+          icon: 'people',
           color: '#ff7f0e',
           link: '/customers'
         }

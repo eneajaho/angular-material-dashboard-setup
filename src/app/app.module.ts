@@ -17,8 +17,15 @@ import { TestComponent } from './test.component';
 import { HeaderComponent } from './layout/header.component';
 import { MenuItemComponent } from './layout/menu-item/menu-item.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SalesComponent } from './sales/sales.component';
+import { PageHeaderComponent } from './layout/page-header.component';
 
 const routes: Routes = [
+  {
+    path: '',
+    pathMatch: 'full',
+    redirectTo: 'home'
+  },
   {
     path: '',
     component: LayoutComponent,
@@ -26,13 +33,12 @@ const routes: Routes = [
       {
         path: 'home',
         component: TestComponent
+      },
+      {
+        path: 'sales',
+        component: SalesComponent
       }
     ]
-  },
-  {
-    path: '',
-    pathMatch: 'full',
-    redirectTo: 'home'
   }
 ];
 
@@ -46,7 +52,7 @@ const routes: Routes = [
     MatToolbarModule,
     MatSidenavModule,
     MatListModule,
-    RouterModule,
+    RouterModule.forRoot(routes),
     MatProgressSpinnerModule,
     MatExpansionModule,
     MatMenuModule
@@ -56,7 +62,9 @@ const routes: Routes = [
     LayoutComponent,
     HeaderComponent,
     MenuItemComponent,
-    TestComponent
+    PageHeaderComponent,
+    TestComponent,
+    SalesComponent
   ],
   bootstrap: [AppComponent]
 })
