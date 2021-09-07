@@ -13,11 +13,11 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { LayoutComponent } from './layout/layout.component';
-import { TestComponent } from './test.component';
+import { HomeComponent } from './home.component';
 import { HeaderComponent } from './layout/header.component';
 import { MenuItemComponent } from './layout/menu-item/menu-item.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { SalesComponent } from './sales/sales.component';
+import { SalesComponent } from './sales.component';
 import { PageHeaderComponent } from './layout/page-header.component';
 
 const routes: Routes = [
@@ -32,7 +32,7 @@ const routes: Routes = [
     children: [
       {
         path: 'home',
-        component: TestComponent
+        component: HomeComponent
       },
       {
         path: 'sales',
@@ -63,7 +63,7 @@ const routes: Routes = [
     HeaderComponent,
     MenuItemComponent,
     PageHeaderComponent,
-    TestComponent,
+    HomeComponent,
     SalesComponent
   ],
   bootstrap: [AppComponent]

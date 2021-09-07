@@ -21,4 +21,4 @@ import { Component } from '@angular/core';
     </div>
   `
 })
-export class TestComponent {}
+export class HomeComponent {}
