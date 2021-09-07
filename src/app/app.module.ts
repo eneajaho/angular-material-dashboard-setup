@@ -13,16 +13,12 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { LayoutComponent } from './layout/layout.component';
-import { TestComponent } from './test/test.component';
-import { HeaderComponent } from './header.component';
-import { MenuItemComponent } from './menu-item/menu-item.component';
+import { TestComponent } from './test.component';
+import { HeaderComponent } from './layout/header.component';
+import { MenuItemComponent } from './layout/menu-item/menu-item.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 const routes: Routes = [
-  {
-    path: '',
-    pathMatch: 'full',
-    redirectTo: 'home'
-  },
   {
     path: '',
     component: LayoutComponent,
@@ -32,12 +28,18 @@ const routes: Routes = [
         component: TestComponent
       }
     ]
+  },
+  {
+    path: '',
+    pathMatch: 'full',
+    redirectTo: 'home'
   }
 ];
 
 @NgModule({
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     FormsModule,
     MatIconModule,
     MatButtonModule,

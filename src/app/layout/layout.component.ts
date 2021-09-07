@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { Menu } from '../menu.model';
+import { Menu } from './menu.model';
 
 @Component({
   selector: 'app-layout',
@@ -30,93 +30,27 @@ export class LayoutComponent {
 
   menu: Menu = [
     {
-      title: 'TASK',
+      title: 'Home',
       icon: 'home',
       link: '/home',
       color: '#ff7f0e'
     },
     {
-      title: 'RETE VENDITA',
-      icon: 'stacked_bar_chart',
-      link: '/sales-network',
-      color: '#0e2660'
-    },
-    {
-      title: 'CONTRATTI',
-      icon: 'assignment',
+      title: 'Statistics',
+      icon: 'chart',
       color: '#ff7f0e',
       subMenu: [
         {
-          title: 'Gestione contratti',
-          icon: 'assignment',
-          link: '/contracts',
+          title: 'Sales',
+          icon: 'money',
+          link: '/money',
           color: '#ff7f0e'
         },
         {
-          title: 'Contratti generati',
-          icon: 'work',
+          title: 'Customers',
+          icon: 'person',
           color: '#ff7f0e',
-          link: '/contracts/jobs'
-        }
-      ]
-    },
-    {
-      title: 'FATTURE',
-      icon: 'money',
-      color: '#0e2660',
-      subMenu: [
-        {
-          title: 'Gestione fatture',
-          icon: 'money',
-          link: '/commissions',
-          color: '#0e2660'
-        },
-        {
-          title: 'Fatture generate',
-          icon: 'work',
-          color: '#ff7f0e',
-          link: '/commissions/jobs'
-        }
-      ]
-    },
-    {
-      title: 'SOCIETÀ MANDANTE',
-      icon: 'home_work',
-      link: '/society',
-      color: '#ff7f0e'
-    },
-    {
-      title: 'PAGAMENTI EXTRA',
-      icon: 'monetization_on',
-      link: '/extra-payments',
-      color: '#0e2660',
-      hideFor: 'Agent'
-    },
-
-    {
-      title: 'SEPA',
-      icon: 'how_to_vote',
-      color: '#ff7f0e',
-      expanded: false,
-      hideFor: 'Agent',
-      subMenu: [
-        {
-          title: 'Distinte Pagamenti',
-          icon: 'payment',
-          color: '#ff7f0e',
-          link: 'sepa/sepa-pagamenti'
-        },
-        {
-          title: 'Distinte Fatture',
-          icon: 'addchart',
-          color: '#ff7f0e',
-          link: '/sepa/sepa-fatture'
-        },
-        {
-          title: 'Distinte Generate',
-          icon: 'work',
-          color: '#ff7f0e',
-          link: 'sepa/jobs'
+          link: '/customers'
         }
       ]
     }
