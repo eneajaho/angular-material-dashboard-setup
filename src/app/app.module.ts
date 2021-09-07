@@ -14,7 +14,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { LayoutComponent } from './layout/layout.component';
 import { TestComponent } from './test/test.component';
-import { HeaderComponent } from './header/header.component';
+import { HeaderComponent } from './header.component';
 import { MenuItemComponent } from './menu-item/menu-item.component';
 
 const routes: Routes = [

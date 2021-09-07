@@ -23,10 +23,10 @@
 
 .mat-list-base {
   padding-top: 0;
+}
 
-  .mat-list-item {
-    height: 50px;
-  }
+.mat-list-base .mat-list-item {
+   height: 50px;
 }
 
 .list-item {
